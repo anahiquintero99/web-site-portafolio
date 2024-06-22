@@ -175,6 +175,11 @@ span.navbar-text {
 	background-color: transparent;
 	transition: 0.3s ease-in-out;
 }
+
+.menu-navbar {
+  width: 40%;
+}
+
 .navbar-text button span {
   z-index: 1;
 }
@@ -425,7 +430,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   
 /************ Projects Css ************/
 .project {
-  height: 85vh;
   padding: 80px 0;
   position: relative;
   background-color: #f7f7f7;
@@ -451,14 +455,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: var(--color-black);
 }
 .project .nav.nav-pills {
-  width: 72%;
   margin: 0 auto;
+  gap:20px;
   border-radius: 50px;
   background-color: rgb(255 255 255 / 10%);
   overflow: hidden;
 }
 .project .nav.nav-pills .nav-item {
-  width: 33.33333%;
+  width: 40%;
 }
 .project .nav.nav-pills .nav-link {
   background-color: transparent;
@@ -581,14 +585,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin: 30px;
 }
 
-.container-info-github {
-  width: 50%; /* Ocupa el 50% del ancho de la tarjeta */
-}
-
-.container-info-github p {
-  margin: 0; /* Elimina el margen predeterminado de los párrafos */
-  text-align: left; /* Alinea el texto a la izquierda */
-}
 
 .card-container h3 {
   font-size: 1.5rem; /* Tamaño de fuente del título */
@@ -603,16 +599,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: var(--color-white);
 }
 
-.photo-github {
-  border-radius: 50%; /* Hace que la imagen del avatar sea circular */
-  width: 100px; /* Tamaño de la imagen del avatar */
-  height: 100px; /* Tamaño de la imagen del avatar */
-  margin-bottom: 15px; /* Espaciado inferior */
-}
-
-
-
-
 .card-container a {
   color: #007bff; /* Color del enlace */
   text-decoration: none; /* Quita el subrayado del enlace */
@@ -624,7 +610,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 
 /************ Contact Css ************/
-.contact {
+/* .contact {
   height: 75vh;
   background: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
 }
@@ -711,7 +697,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   100%{
     transform: translateY(-50px);
   }
-}
+} */
 
 /************ Footer Css ************/
 .footer {
@@ -731,6 +717,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-top: 20px;
 }
 
+/* whatsaap */
+/* icon whatsapp */
+.icon-whatsapp {
+  display: flex;
+  justify-content: end;
+  padding-right: 30px;
+}
+
+.icon-whatsapp img {
+  width: 80px;
+  height: 80px;
+}
 
 
 
@@ -741,9 +739,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 		visibility: hidden;
 	}
 
+
+
   .banner .tagline{
     font-size: 2.1rem;
     margin-top: 40px;
+  }
+
+  .container-details-header {
+    padding: 0px;
   }
 
   .banner h1 {
@@ -757,8 +761,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
   .banner img {
     margin-top: -40px;
-    width: 10rem;
+    width: 9.5rem;
     animation: none;
+    /* display: none; */
   }
 
   .skill {
@@ -786,10 +791,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     font-size: 2.2rem;
   }
 
-  .project {
-    height: 100vh;
-    margin-bottom: 20rem;
-  }
 
   .container-details-info-github {
     flex-direction: column; /* Cambia la dirección a columna en pantallas más pequeñas */
